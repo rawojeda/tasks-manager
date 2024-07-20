@@ -1,0 +1,2 @@
+PROYECTO1:
+- go to "https://start.spring.io/" and create one with Maven+Java+SpringBoot(3.2.8 better).
