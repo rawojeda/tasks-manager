@@ -82,29 +82,25 @@ src
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/task-manager-api.git
-    cd task-manager-api
+    git clone https://github.com/rawojeda/tasks-manager.git
+    cd tasks-manager
     ```
 
 2. Configure the MySQL database in `application.properties`:
     ```properties
-    spring.datasource.url=jdbc:mysql://localhost:3306/tasks_db
-    spring.datasource.username=root
-    spring.datasource.password=yourpassword
+    spring.datasource.url=jdbc:mysql://localhost:3306/${yourDatabase}?useSSL=false&serverTimezone=UTC
+    spring.datasource.username={yourUserName}
+    spring.datasource.password={yourpassword}
     spring.jpa.hibernate.ddl-auto=update
     ```
 
 3. Build the project:
     ```sh
-    mvn clean install
+    npm install
     ```
 
-4. Run the application:
-    ```sh
-    mvn spring-boot:run
-    ```
+4. Run the application "TasksManagerApplication.java".
 
-The application will start on `http://localhost:8080`.
 
 ## Usage
 
